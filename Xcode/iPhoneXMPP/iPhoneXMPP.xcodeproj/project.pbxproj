@@ -133,6 +133,11 @@
 		DCC22142149A61F000736DC1 /* XMPPRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC22135149A61F000736DC1 /* XMPPRoom.m */; };
 		DCC22146149A6C0100736DC1 /* XMPPIDTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC22145149A6C0100736DC1 /* XMPPIDTracker.m */; };
 		DCD4944312234A49004BEE1A /* libresolv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD4944212234A49004BEE1A /* libresolv.dylib */; };
+		FD18A59A186D3E280068D212 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = FD18A594186D3E280068D212 /* base64.c */; };
+		FD18A59B186D3E280068D212 /* NSData+SRB64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = FD18A597186D3E280068D212 /* NSData+SRB64Additions.m */; };
+		FD18A59C186D3E280068D212 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = FD18A599186D3E280068D212 /* SRWebSocket.m */; };
+		FD18A5A0186D3E870068D212 /* WebSocketTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = FD18A59F186D3E870068D212 /* WebSocketTransport.m */; };
+		FD18A5A3186D3F7F0068D212 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FD18A5A2186D3F7F0068D212 /* libicucore.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -385,6 +390,16 @@
 		DCD4944212234A49004BEE1A /* libresolv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.dylib; path = usr/lib/libresolv.dylib; sourceTree = SDKROOT; };
 		DCE11268140C5798007A2A46 /* XMPPFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMPPFramework.h; path = Classes/XMPPFramework.h; sourceTree = "<group>"; };
 		DCF3C0CE1365C68300111BA3 /* XMPP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMPP.h; path = ../../Core/XMPP.h; sourceTree = "<group>"; };
+		FD18A594186D3E280068D212 /* base64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = base64.c; sourceTree = "<group>"; };
+		FD18A595186D3E280068D212 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		FD18A596186D3E280068D212 /* NSData+SRB64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SRB64Additions.h"; sourceTree = "<group>"; };
+		FD18A597186D3E280068D212 /* NSData+SRB64Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SRB64Additions.m"; sourceTree = "<group>"; };
+		FD18A598186D3E280068D212 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
+		FD18A599186D3E280068D212 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
+		FD18A59E186D3E870068D212 /* WebSocketTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocketTransport.h; sourceTree = "<group>"; };
+		FD18A59F186D3E870068D212 /* WebSocketTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebSocketTransport.m; sourceTree = "<group>"; };
+		FD18A5A1186D3EEE0068D212 /* XMPPTransportProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPPTransportProtocol.h; sourceTree = "<group>"; };
+		FD18A5A2186D3F7F0068D212 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -392,6 +407,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD18A5A3186D3F7F0068D212 /* libicucore.dylib in Frameworks */,
 				DC26A52D152A3E82004B71C0 /* Security.framework in Frameworks */,
 				070400B91347D09A0092A737 /* CoreLocation.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
@@ -591,6 +607,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FD18A5A2186D3F7F0068D212 /* libicucore.dylib */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
@@ -698,6 +715,7 @@
 		DC1F98031152CB0C00138A8F /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				FD18A59D186D3E470068D212 /* Transport */,
 				DCF3C0CE1365C68300111BA3 /* XMPP.h */,
 				07AF16F7134A4E740084D82A /* XMPPInternal.h */,
 				DCC0BEF31301CE9100EC45D2 /* XMPPLogging.h */,
@@ -851,6 +869,7 @@
 		DC84BBA0124409CE0055A459 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				FD18A593186D3E280068D212 /* SocketRocket */,
 				DCC0BED51301CDE000EC45D2 /* Logging */,
 				DC1F97E31152CA3500138A8F /* TCP */,
 				DC84BBA1124409D60055A459 /* IDN */,
@@ -1125,6 +1144,29 @@
 			name = Private;
 			sourceTree = "<group>";
 		};
+		FD18A593186D3E280068D212 /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				FD18A594186D3E280068D212 /* base64.c */,
+				FD18A595186D3E280068D212 /* base64.h */,
+				FD18A596186D3E280068D212 /* NSData+SRB64Additions.h */,
+				FD18A597186D3E280068D212 /* NSData+SRB64Additions.m */,
+				FD18A598186D3E280068D212 /* SRWebSocket.h */,
+				FD18A599186D3E280068D212 /* SRWebSocket.m */,
+			);
+			path = SocketRocket;
+			sourceTree = "<group>";
+		};
+		FD18A59D186D3E470068D212 /* Transport */ = {
+			isa = PBXGroup;
+			children = (
+				FD18A5A1186D3EEE0068D212 /* XMPPTransportProtocol.h */,
+				FD18A59E186D3E870068D212 /* WebSocketTransport.h */,
+				FD18A59F186D3E870068D212 /* WebSocketTransport.m */,
+			);
+			path = Transport;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1198,6 +1240,7 @@
 				1D3623260D0F684500981E51 /* iPhoneXMPPAppDelegate.m in Sources */,
 				28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */,
 				DC84BBC512440A6F0055A459 /* XMPPStringPrep.m in Sources */,
+				FD18A59C186D3E280068D212 /* SRWebSocket.m in Sources */,
 				DC84BBDB12440A8E0055A459 /* XMPPElement.m in Sources */,
 				DC84BBDC12440A8E0055A459 /* XMPPIQ.m in Sources */,
 				DC84BBDD12440A8E0055A459 /* XMPPJID.m in Sources */,
@@ -1238,6 +1281,7 @@
 				DC1CF89D1361F28000E71363 /* DDXMLDocument.m in Sources */,
 				DC1CF89E1361F28000E71363 /* DDXMLElement.m in Sources */,
 				DC1CF89F1361F28000E71363 /* DDXMLNode.m in Sources */,
+				FD18A5A0186D3E870068D212 /* WebSocketTransport.m in Sources */,
 				DC37309E139E9FD100A8407D /* XMPPReconnect.m in Sources */,
 				DC3730B7139E9FDA00A8407D /* XMPPGroupCoreDataStorageObject.m in Sources */,
 				DC3730B8139E9FDA00A8407D /* XMPPResourceCoreDataStorageObject.m in Sources */,
@@ -1269,6 +1313,7 @@
 				DC30E6CF153E09D2001B9E6D /* XMPPDigestMD5Authentication.m in Sources */,
 				DC30E6D0153E09D2001B9E6D /* XMPPPlainAuthentication.m in Sources */,
 				DC30E6D1153E09D2001B9E6D /* XMPPXFacebookPlatformAuthentication.m in Sources */,
+				FD18A59B186D3E280068D212 /* NSData+SRB64Additions.m in Sources */,
 				DCB215791715EC0600719845 /* XMPPBandwidthMonitor.m in Sources */,
 				DCB215821715EC3600719845 /* XMPPResourceMemoryStorageObject.m in Sources */,
 				DCB215831715EC3600719845 /* XMPPRosterMemoryStorage.m in Sources */,
@@ -1294,6 +1339,7 @@
 				DCB215CA1715ED8700719845 /* XMPPMessageArchivingCoreDataStorage.m in Sources */,
 				DCB215CB1715ED8700719845 /* XMPPMessageArchiving.m in Sources */,
 				DCB215CF1715EDB100719845 /* XMPPMessage+XEP_0184.m in Sources */,
+				FD18A59A186D3E280068D212 /* base64.c in Sources */,
 				DCB215D51715EDC500719845 /* XMPPAutoPing.m in Sources */,
 				DCB215D61715EDC500719845 /* XMPPPing.m in Sources */,
 				DCB215DC1715EDD600719845 /* XMPPAutoTime.m in Sources */,
